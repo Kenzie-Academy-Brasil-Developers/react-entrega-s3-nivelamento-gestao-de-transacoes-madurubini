@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import Form from "./components/Form";
 import Display from "./components/Display";
-import Card from "./components/Card";
+import DisplayMov from "./components/DisplayMov";
 
 function App() {
   const [transactions, setTransactions] = useState([
@@ -21,14 +21,7 @@ function App() {
           transactions={transactions}
           setTransactions={setTransactions}
         ></Display>
-        <h3>Todas as Transações</h3>
-        <ul>
-          {transactions.map((item, index) => (
-            <li key={index}>
-              <Card item={item}></Card>
-            </li>
-          ))}
-        </ul>
+        <DisplayMov transactions={transactions}></DisplayMov>
       </header>
     </div>
   );
