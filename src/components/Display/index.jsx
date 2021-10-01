@@ -18,7 +18,6 @@ const Display = ({ transactions }) => {
       setSaidaProducts(filterItems);
       setShowButton(false);
     }
-    console.log(entradaProducts);
   };
 
   return (

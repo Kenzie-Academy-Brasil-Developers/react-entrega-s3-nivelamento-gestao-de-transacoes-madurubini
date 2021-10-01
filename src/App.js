@@ -7,7 +7,7 @@ import Card from "./components/Card";
 function App() {
   const [transactions, setTransactions] = useState([
     { name: "banana", quantity: 100, price: 5, type: "entrada" },
-    { name: "morango", quantity: -10, price: 2, type: "saida" },
+    { name: "morango", quantity: 10, price: 2, type: "saida" },
     { name: "laranja", quantity: 50, price: 6, type: "entrada" },
   ]);
 
@@ -20,10 +20,6 @@ function App() {
         <Display
           transactions={transactions}
           setTransactions={setTransactions}
-          // setSaidaProducts={setSaidaProducts}
-          // setEntradaProducts={setEntradaProducts}
-          // saidaProducts={saidaProducts}
-          // entradaProducts={entradaProducts}
         ></Display>
         <h3>Todas as Transações</h3>
         <ul>
